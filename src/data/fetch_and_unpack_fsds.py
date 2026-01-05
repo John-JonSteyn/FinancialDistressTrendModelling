@@ -1,11 +1,11 @@
 """
-FSDS acquisition script for a fixed modelling horizon.
+FSDS acquisition script for a fixed modelling horison.
 
 This script downloads and unpacks the SEC Financial Statement Data Sets (FSDS)
 for the period 2019 Q1 through 2024 Q4.
 
 The date range is intentionally fixed to ensure reproducibility of the
-financial distress trend modelling experiment. If the modelling horizon
+financial distress trend modelling experiment. If the modelling horison
 changes, a new script should be created rather than modifying this one.
 """
 
@@ -19,7 +19,7 @@ from typing import Iterable
 
 
 # ------------------------
-# Fixed modelling horizon 
+# Fixed modelling horison 
 # ------------------------
 START_YEAR = 2019
 START_QUARTER = 1
@@ -133,7 +133,7 @@ def unpack_financial_statement_dataset_zip(
         zip_file_handle.extractall(output_quarter_directory)
 
 
-# Download and unpack FSDS quarterly ZIP files for the fixed modelling horizon.
+# Download and unpack FSDS quarterly ZIP files for the fixed modelling horison.
 def main() -> None:
     output_zip_directory = pathlib.Path("data/raw/fsds_zip")
     output_text_root_directory = pathlib.Path("data/raw/fsds_txt")
