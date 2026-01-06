@@ -1,0 +1,17 @@
+column_name,missing_value_count
+cik,0
+period,0
+Assets,1566
+CashAndCashEquivalentsAtCarryingValue,26796
+CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents,54567
+DebtCurrent,139030
+InterestExpense,72646
+Liabilities,20968
+LongTermDebtCurrent,120599
+LongTermDebtNoncurrent,109038
+NetCashProvidedByUsedInOperatingActivities,4424
+NetIncomeLoss,20009
+OperatingIncomeLoss,33360
+Revenues,97131
+StockholdersEquity,13231
+latest_filed,0
