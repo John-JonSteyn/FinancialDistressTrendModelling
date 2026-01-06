@@ -21,9 +21,9 @@
 
 ## Overview
 
-This repository implements an **end-to-end financial distress trend modelling pipeline** using publicly available SEC XBRL filings.
+This repository implements an end-to-end financial distress trend modelling pipeline using publicly available SEC XBRL filings.
 
-Rather than predicting bankruptcy as a single binary event, the system focuses on **early-warning distress signals** by modelling **financial deterioration trajectories over time**.
+Rather than predicting bankruptcy as a single binary event, the system focuses on early-warning distress signals by modelling financial deterioration trajectories over time.
 The output is a probability-based assessment designed to support monitoring, triage, and intervention decisions rather than deterministic classification.
 
 The project combines:
@@ -37,9 +37,9 @@ The project combines:
 
 ## Objectives
 
-* Move beyond point-in-time credit risk assessment toward **temporal distress modelling**
+* Move beyond point-in-time credit risk assessment toward temporal distress modelling
 * Engineer interpretable financial ratio, trend, and slope features from SEC filings
-* Enforce strict **time-based evaluation** to avoid look-ahead bias
+* Enforce strict time-based evaluation to avoid look-ahead bias
 * Produce explainable, company-level reports suitable for professional review
 * Demonstrate how academic models can be deployed against live regulatory data
 
@@ -47,7 +47,7 @@ The project combines:
 
 ## Example Outputs
 
-Below are automatically generated company-level distress reports using the most recent available SEC filings.
+Below are automatically generated, company-level distress reports based on the most recent available SEC filings.
 
 ### Stable example
 
@@ -106,7 +106,7 @@ Each report includes:
 
 * Gradient boosting classifier
 * Trained on historical firm trajectories
-* Evaluated using **time-holdout splits** and **unseen-company splits**
+* Evaluated using time-holdout splits and unseen-company splits
 * Outputs probabilistic distress scores rather than hard predictions
 
 ### Scoring and Reporting
@@ -139,34 +139,41 @@ docs/
 
 ## Reproducibility Notes
 
-* All feature engineering mirrors the training pipeline exactly during scoring
-* Time-based splits prevent information leakage
-* Randomised demo selection is deterministic via seed control
-* Reports can be regenerated entirely from SEC data and saved models
+* All feature engineering applied during company scoring mirrors the training pipeline exactly, including ratio construction, rolling windows, and trend calculations.
+* Train-test splits are strictly time-based, preventing information leakage from future financial periods into model training.
+* Randomised company selection for demonstration and report generation is deterministic through explicit seed control.
+* All reports can be regenerated end-to-end from publicly available SEC XBRL filings using the saved model artefacts included in the repository.
+* Minor numerical differences may occur over time due to updates or restatements in SEC filings, but model behaviour and pipeline logic remain fully reproducible.
 
----
+## Reproducing the pipeline
 
-## Important Notes and Limitations
+The full modelling and reporting pipeline can be reproduced as follows:
 
-* This system does **not** predict bankruptcy events
-* Outputs are **early-warning indicators**, not deterministic outcomes
-* SEC filings may be incomplete, delayed, or amended
-* Results depend on reporting frequency and accounting conventions
-* This project is for **academic and research purposes only**
+```bash
+# 1. Fetch and unpack SEC financial statement data
+python src/data/fetch_and_unpack_sec_data.py
 
-It is **not** financial, investment, or legal advice.
+# 2. Build base financial tables and engineered features
+python src/features/compute_financial_features.py
+
+# 3. Define proxy distress labels
+python src/labels/build_distress_proxy_labels.py
+
+# 4. Generate time-based train-test splits
+python src/models/model_data_split.py
+
+# 5. Train the distress prediction model
+python src/models/train_gradient_boosting.py
+
+# 6. Score a company and generate a full report
+python src/reporting/score_company_from_sec.py
+```
 
 ---
 
 ## Purpose
 
-This project demonstrates how machine learning models can be responsibly applied to longitudinal financial data while respecting temporal causality, interpretability, and real-world deployment constraints.
-
-It is intended as:
-
-* An academic exploration of distress trend modelling
-* A methodological reference for time-aware financial ML
-* A foundation for further research into early-warning systems
+This project develops a longitudinal financial distress modelling framework designed to identify early warning signals of corporate deterioration using publicly available SEC XBRL filings. The system models financial trajectories across multiple quarters, capturing changes in leverage, profitability, liquidity, and cash flow through engineered ratios and trend features. A supervised learning model translates these evolving financial patterns into probabilistic risk assessments, supporting proactive monitoring and decision-making in investment, credit risk, and turnaround contexts where timely intervention is critical.
 
 ---
 
