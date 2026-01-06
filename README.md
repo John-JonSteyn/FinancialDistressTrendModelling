@@ -171,9 +171,26 @@ python src/reporting/score_company_from_sec.py
 
 ---
 
-## Purpose
+## Research Context
 
-This project develops a longitudinal financial distress modelling framework designed to identify early warning signals of corporate deterioration using publicly available SEC XBRL filings. The system models financial trajectories across multiple quarters, capturing changes in leverage, profitability, liquidity, and cash flow through engineered ratios and trend features. A supervised learning model translates these evolving financial patterns into probabilistic risk assessments, supporting proactive monitoring and decision-making in investment, credit risk, and turnaround contexts where timely intervention is critical.
+This project develops a longitudinal financial distress modelling framework designed to identify early warning signals of corporate deterioration using publicly available SEC XBRL filings. The system models financial trajectories across multiple quarters, capturing changes in leverage, profitability, liquidity, and cash flow through engineered ratios and trend features.
+
+A supervised learning model translates these evolving financial patterns into probabilistic risk assessments, supporting proactive monitoring and decision-making in investment, credit risk, and turnaround contexts where timely intervention is critical.
+
+---
+
+## Supporting Documentation
+
+Additional methodological details are provided in the `docs/` directory:
+
+* **`docs/dataset_provenance.md`**  
+  Describes the origin, structure, filtering, and transformation of SEC XBRL data used throughout the pipeline.
+
+* **`docs/label_definition.md`**  
+  Defines the proxy distress labelling strategy, including its rationale, assumptions, and limitations.
+
+These documents are intended to support transparency, auditability, and academic review rather than day-to-day usage.
+
 
 ---
 
