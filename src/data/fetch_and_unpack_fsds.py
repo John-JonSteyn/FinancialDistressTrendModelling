@@ -139,8 +139,7 @@ def main() -> None:
     output_text_root_directory = pathlib.Path("data/raw/fsds_txt")
 
     user_agent_string = (
-        "FinancialDistressTrendModelling "
-        "(academic research; contact: your.email@example.com)"
+        "FinancialDistressTrendModelling (academic research)"
     )
 
     for year, quarter in generate_quarter_sequence(
