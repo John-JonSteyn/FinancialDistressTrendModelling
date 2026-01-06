@@ -1,0 +1,30 @@
+# Split metadata
+metric_name,metric_value
+split_strategy,time_holdout
+train_years,2019-2022
+test_years,2023-2024
+train_row_count,97052
+test_row_count,41453
+train_unique_company_count,8201
+test_unique_company_count,6689
+overlapping_company_count,6143
+
+# Unique company counts by split bucket
+split_bucket,unique_company_count
+test,6689
+train,8201
+
+# Row counts by split bucket, fiscal year, and label
+split_bucket,fiscal_year,distress_proxy_label,row_count
+test,2023,0,5727
+test,2023,1,18470
+test,2024,0,5310
+test,2024,1,11946
+train,2019,0,11130
+train,2019,1,11672
+train,2020,0,5498
+train,2020,1,17237
+train,2021,0,6092
+train,2021,1,19466
+train,2022,0,5590
+train,2022,1,20367
