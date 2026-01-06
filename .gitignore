@@ -16,3 +16,10 @@ __pycache__/
 /data/raw/
 /data/interim/
 /data/processed/
+
+# Generated company reports
+outputs/figures/company_*.png
+outputs/tables/company_score_*.csv
+outputs/tables/company_feature_coverage_*.csv
+outputs/tables/company_permutation_importance_*.csv
+outputs/tables/company_score_summary_*.json
