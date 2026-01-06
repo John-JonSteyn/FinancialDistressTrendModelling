@@ -183,10 +183,10 @@ A supervised learning model translates these evolving financial patterns into pr
 
 Additional methodological details are provided in the `docs/` directory:
 
-* **`docs/dataset_provenance.md`**  
+* **[`dataset_provenance.md`](docs/dataset_provenance.md)**  
   Describes the origin, structure, filtering, and transformation of SEC XBRL data used throughout the pipeline.
 
-* **`docs/label_definition.md`**  
+* **[`label_definition.md`](docs/label_definition.md)**  
   Defines the proxy distress labelling strategy, including its rationale, assumptions, and limitations.
 
 These documents are intended to support transparency, auditability, and academic review rather than day-to-day usage.
