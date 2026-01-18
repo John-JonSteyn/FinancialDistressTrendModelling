@@ -4,16 +4,16 @@
 
 <p align="center">
   <a href="https://github.com/John-JonSteyn/FinancialDistressTrendModelling/stargazers" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/github/stars/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4C6FAF" alt="GitHub stars" />
+    <img src="https://img.shields.io/github/stars/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4D6FAF" alt="GitHub stars" />
   </a>
   <a href="https://github.com/John-JonSteyn/FinancialDistressTrendModelling" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/github/repo-size/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4C6FAF" alt="Repo size" />
+    <img src="https://img.shields.io/github/repo-size/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4D6FAF" alt="Repo size" />
   </a>
   <a href="https://github.com/John-JonSteyn/FinancialDistressTrendModelling/commits/main" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/github/last-commit/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4C6FAF" alt="Last commit" />
+    <img src="https://img.shields.io/github/last-commit/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4D6FAF" alt="Last commit" />
   </a>
   <a href="https://github.com/John-JonSteyn/FinancialDistressTrendModelling/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/github/license/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4C6FAF" alt="License" />
+    <img src="https://img.shields.io/github/license/John-JonSteyn/FinancialDistressTrendModelling?style=for-the-badge&color=4D6FAF" alt="License" />
   </a>
 </p>
 
